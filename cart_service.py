@@ -54,7 +54,7 @@ carts = [
 @app.route('/cart/<int:user_id>', methods=['GET'])
 def get_cart(user_id):
     # Simulate interacting with the Product Service to get cart contents
-    product_service_url = fhttp://127.0.0.1/products"
+    product_service_url = f"http://127.0.0.1/products"
     response = requests.get(product_service_url)
     products = response.json()
 
